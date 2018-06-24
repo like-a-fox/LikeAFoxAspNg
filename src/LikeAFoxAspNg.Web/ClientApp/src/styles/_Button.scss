@@ -1,0 +1,108 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: $color-primary;
+    border: .1rem solid $color-primary;
+    color: $color-initial;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1vw;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    line-height: 2.7vw;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    &:focus,
+    &:hover {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        color: $color-initial;
+        outline: 0;
+    }
+    &[disabled] {
+        cursor: default;
+        opacity: .5;
+        &:focus,
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+    &.button-outline {
+        background-color: transparent;
+        color: $color-primary;
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            border-color: $color-secondary;
+            color: $color-secondary;
+        }
+        &[disabled] {
+            &:focus,
+            &:hover {
+                border-color: inherit;
+                color: $color-primary;
+            }
+        }
+    }
+    &.button-clear {
+        background-color: transparent;
+        border-color: transparent;
+        color: $color-primary;
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            border-color: transparent;
+            color: $color-secondary;
+        }
+        &[disabled] {
+            &:focus,
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}
+.form-container button {
+    color: #a68080;
+    height: 3vw;
+    border: none;
+    line-height: 3vw;
+    width: 15vw;
+    text-align: center;
+    position: fixed;
+    bottom: 2vw;
+    right: 1vw;
+}
+.form-container button:hover {
+    background: #a68080;
+    color: $color-primary;
+}
+.login-form button {
+    background: #313b47;
+    color:#a68080;
+    border: none;
+    outline: none;
+    text-align:center;
+    height: 3vw;
+    line-height: 3vw;
+    width: 33vw;
+    padding: 0;
+    align-items: unset;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+
+}
+.login-form button:hover {
+    background: #a68080;
+    color: #313b47;
+}

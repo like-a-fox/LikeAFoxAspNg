@@ -1,0 +1,13 @@
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+    border:unset;
+    background-color: unset;
+    color:unset;
+}

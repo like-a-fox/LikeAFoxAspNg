@@ -1,0 +1,77 @@
+﻿
+<div class="form-container">
+        <h2>Register</h2>
+
+    <div class="row form-block">
+        <div class="column">
+    
+            <appc-dynamic-form (onSubmit)="register($event)" [controls]="controls" [btnText]="'Register'"></appc-dynamic-form>
+    
+        </div>
+    </div>
+
+</div>
+<div class="asp-identity-info">
+    <h1 class="info">Identity on ASP.NET Core </h1>
+    <p>
+            ASP.NET Core Identity is a membership system which allows you to add login functionality to your application. Users can create an account and login with a user name and password or they can use an external login provider such as Facebook, Google, Microsoft Account, Twitter or others.
+</p>
+<br />
+    <p>
+            You can configure ASP.NET Core Identity to use a SQL Server database to store user names, passwords, and profile data. Alternatively, you can use your own persistent store, for example, an Azure Table Storage. This document contains instructions for Visual Studio and for using the CLI.
+
+
+    </p>
+</div>
+<style>
+    input[type="text"] {
+        border:unset;
+    }
+    .form-container {
+        width: 33vw;
+        position: fixed;
+        bottom: 0;
+        right:0;
+        top: 5vw;
+        padding: 1vw 1vw;
+        height: 100%;
+        background: #c0c8d1; 
+        color: #313b47;
+        text-align: right;
+    }
+   
+    .form-container label {
+        font-size: 1.7vw;
+    }
+    .form-container input[type='text'] {
+        border: none;
+        color: #313b47;
+    }
+    .form-container h2 {
+        display: block;
+        width: 20vw;
+        border-bottom: solid .3vw #606c76;
+        color: #313b47;
+        float: right;
+    }
+.asp-identity-info {
+    width: 55vw;
+    position: fixed;
+    top: 5vw;
+    left:0;
+    padding-left: 1vw;
+    padding-top:1vw;
+    float: left;
+}
+h1.info {
+    display: block;
+    width: 35vw;
+    color: #606c76;
+    border-bottom: solid .3vw #313b47;
+}
+.asp-identity-info p {
+    padding-bottom: 3vw;
+    padding-top: 1vw;
+}
+    
+</style>
