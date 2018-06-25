@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   LikeAFoxAspNg.web:
-    image: ${DOCKER_REGISTRY}LikeAFoxAspNgweb
+    image: likeafox/likeafoxaspng:latest
     build:
       context: .
       dockerfile: src/LikeAFoxAspNg.Web/Dockerfile

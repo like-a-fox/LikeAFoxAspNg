@@ -24,7 +24,7 @@ RUN npm i -g yarn
 RUN cd src/LikeAFoxAspNg.Web/ClientApp \
     && yarn
 COPY . .
-WORKDIR /src/src/LikeAFoxAspNg.Web
+WORKDIR /src/LikeAFoxAspNg.Web
 RUN dotnet build LikeAFoxAspNg.Web.csproj -c Release -o /app
 
 FROM build AS publish
