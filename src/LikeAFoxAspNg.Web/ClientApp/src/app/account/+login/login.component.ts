@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { OAuthService } from 'angular-oauth2-oidc';
 import { Router } from '@angular/router';
 
@@ -8,7 +8,8 @@ import { ControlTextbox } from '../../shared/forms/controls/control-textbox';
 @Component({
     selector: 'appc-login',
     styleUrls: ['./login.component.scss'],
-    templateUrl: './login.component.html'
+    templateUrl: './login.component.html',
+    encapsulation: ViewEncapsulation.Native
 })
 export class LoginComponent implements OnInit {
     public loginModel: ILoginModel;

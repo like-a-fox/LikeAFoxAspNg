@@ -73,14 +73,15 @@ a {
 
 .footer {
     position: fixed;
-
-    right: 1vw;
+    left:0;
+    right: 0;
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
     height: 2vw;
     line-height: 2vw;
     text-align: center;
+
 }
 
 .fade-enter-active,

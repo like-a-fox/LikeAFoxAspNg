@@ -23,25 +23,4 @@ input[type='submit'] {
     }
 }
 
-.login-form button {
-    background: #313b47;
-    color:#a68080;
-    border: none;
-    outline: none;
-    text-align:center;
-    height: 3vw;
-    line-height: 3vw;
-    width: 33vw;
-    padding: 0;
-    align-items: unset;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 
-
-}
-.login-form button:hover {
-    background: #a68080;
-    color: #313b47;
-}

@@ -70,6 +70,5 @@
     "typescript": "2.7.2",
     "webpack-bundle-analyzer": "2.13.1"
   },
- 
   "license": "MIT"
 }
