@@ -14,13 +14,14 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-COPY /src/LikeAFoxAspNg.Web/LikeAFoxAspNg.Web.csproj src/LikeAFoxAspNg.Web/
-COPY /src/LikeAFoxAspNg.Core/LikeAFoxAspNg.Core.csproj src/LikeAFoxAspNg.Core/
-COPY /src/LikeAFoxAspNg.Infrastructure/LikeAFoxAspNg.Infrastructure.csproj src/LikeAFoxAspNg.Infrastructure/
-RUN dotnet restore /src/LikeAFoxAspNg.Web/LikeAFoxAspNg.Web.csproj
+COPY src/LikeAFoxAspNg.Web/LikeAFoxAspNg.Web.csproj src/LikeAFoxAspNg.Web/
+COPY src/LikeAFoxAspNg.Core/LikeAFoxAspNg.Core.csproj src/LikeAFoxAspNg.Core/
+COPY src/LikeAFoxAspNg.Infrastructure/LikeAFoxAspNg.Infrastructure.csproj src/LikeAFoxAspNg.Infrastructure/
+RUN dotnet restore src/LikeAFoxAspNg.Web/LikeAFoxAspNg.Web.csproj
 
-COPY /src/LikeAFoxAspNg.Web/ClientApp/package.json src/LikeAFoxAspNg.Web/ClientApp/
+COPY src/LikeAFoxAspNg.Web/ClientApp/package.json src/LikeAFoxAspNg.Web/ClientApp/
 RUN npm i -g yarn
+RUN npm i -g @angular/cli 
 RUN cd /src/LikeAFoxAspNg.Web/ClientApp \
     && yarn
 COPY . .
