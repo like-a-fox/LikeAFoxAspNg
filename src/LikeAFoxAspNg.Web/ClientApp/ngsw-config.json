@@ -9,7 +9,7 @@
       "installMode": "prefetch",
       "resources": {
         "files": [
-          "/favicon-fox.ico",
+          "/favicon.ico",
           "/index.html",
           "/*.css",
           "/*.js"
