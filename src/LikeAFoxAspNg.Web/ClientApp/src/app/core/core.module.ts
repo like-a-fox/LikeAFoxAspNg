@@ -8,7 +8,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModalComponent } from './components/modal/modal.component';
-import { CookieConsentComponent } from './components/cookie-consent/cookie-consent.component';
 // App level services
 import { AccountService } from './services/account.service';
 import { SimpleNotificationsModule } from './simple-notifications/simple-notifications.module';
@@ -23,7 +22,6 @@ import { TranslatePipe } from '../translate.pipe';
     declarations: [
         HeaderComponent,
         FooterComponent,
-        CookieConsentComponent,
         ModalComponent,
         TranslatePipe
     ],
@@ -43,7 +41,6 @@ import { TranslatePipe } from '../translate.pipe';
         // Components
         HeaderComponent,
         FooterComponent,
-        CookieConsentComponent,
         ModalComponent,
         TranslatePipe
     ],

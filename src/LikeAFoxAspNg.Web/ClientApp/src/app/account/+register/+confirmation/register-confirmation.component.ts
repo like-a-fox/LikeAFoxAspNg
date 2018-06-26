@@ -3,7 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'appc-register-confirmation',
-    templateUrl: './register-confirmation.component.html'
+    templateUrl: './register-confirmation.component.html',
+    styles: ['a { color: #a68080; }']
 })
 export class RegisterConfirmationComponent implements OnInit, OnDestroy {
     public emailConfirmed: boolean;

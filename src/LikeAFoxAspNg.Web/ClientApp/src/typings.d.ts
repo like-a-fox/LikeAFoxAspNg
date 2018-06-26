@@ -14,7 +14,6 @@ interface IApplicationConfig {
     cultures: ICulture[];
     content: StringMap[];
     loginProviders: string[];
-    cookieConsent: ICookieConsent;
 }
 
 interface ICulture {
@@ -25,10 +24,6 @@ interface ICulture {
 
 interface StringMap {
     [s: string]: string;
-}
-interface ICookieConsent {
-    showConsent: boolean;
-    cookieString: string;
 }
 interface KeyValuePair<T> {
     key: string;

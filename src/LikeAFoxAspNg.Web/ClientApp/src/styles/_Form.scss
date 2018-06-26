@@ -8,15 +8,10 @@ input[type='tel'],
 input[type='text'],
 input[type='url'],
 textarea,
-select {
-    appearance: none; // Removes awkward default styles on some inputs for iOS
-    background-color: rgba(255, 255, 255, .9);
+select { // Removes awkward default styles on some inputs for iOS
     border: none;
     color: #313b47;
-    text-transform:capitalize;
     margin-top: 1vw;
-    box-shadow: none;
-    box-sizing: inherit; // Forced to replace inherit values of the normalize.css
     height: 3vw;
     padding: .4vw .5vw; // The .6rem vertically centers text on FF, ignored by Webkit
     width: 100%;
@@ -35,14 +30,6 @@ select {
     margin-bottom: 1vh;
 } 
     
-
-select {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
-    padding-right: 3.0rem;
-    &:focus {
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
-    }
-}
 
 textarea {
     min-height: 6.5rem;
@@ -73,38 +60,9 @@ input[type='radio'] {
     margin-left: .5rem;
 }
 
-form {
-    .buttons {
-        margin-top: 10px;
-    }
-}
-.form-container form .buttons {
-    color: #a68080;
-
-}
 
 div.error {
    display:none;
 }
 
-.login-form input[type='email'],
-.login-form input[type='number'],
-.login-form input[type='password'],
-.login-form input[type='search'],
-.login-form input[type='tel'],
-.login-form input[type='text'],
-.login-form input[type='url'],
-.login-form textarea,
-.login-form select {
-    margin: .5vw;
-    background: #313b47;
-    color: #a68080;
-    width: 31vw;
-    height: 3vw;
 
-    
-}
-.login-form input[placeholder='email'],
-.login-form input[placeholder='password'] {
-    color: #a68080;
-}

@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { ControlBase } from '../../../shared/forms/controls/control-base';
@@ -8,7 +8,9 @@ import { DataService } from '../../../core/services/data.service';
 
 @Component({
     selector: 'appc-register',
-    templateUrl: './register.component.html'
+    templateUrl: './register.component.html',
+    styleUrls: ['./register.component.scss'],
+    encapsulation: ViewEncapsulation.Native
 })
 export class RegisterComponent implements OnInit {
     public controls: Array<ControlBase<any>>;
