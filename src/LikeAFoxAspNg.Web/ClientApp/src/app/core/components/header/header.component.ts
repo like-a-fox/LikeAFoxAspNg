@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { OAuthService } from 'angular-oauth2-oidc';
 
@@ -9,7 +9,8 @@ import { DataService } from '../../services/data.service';
 @Component({
     selector: 'appc-header',
     templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss']
+    styleUrls: ['./header.component.scss'],
+    encapsulation: ViewEncapsulation.Native
 })
 export class HeaderComponent implements OnInit {
     public isNavbarCollapsed:boolean =false;

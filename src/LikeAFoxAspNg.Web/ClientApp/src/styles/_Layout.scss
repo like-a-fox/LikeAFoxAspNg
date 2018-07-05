@@ -96,10 +96,10 @@ a {
 
 @media (max-width: 860px) {
     .header {
-        height:50px;
+        height:60px;
     }
     .header .inner {
-        height:50px;
+        height:60px;
         font-size: 13px;
         letter-spacing: .095px;
     }
@@ -113,8 +113,8 @@ a {
 
 @media (max-width: 680px) {
     .header .inner {
-        height:50px;
-        font-size: 12px;
+        height:60px;
+        font-size: 15px;
         letter-spacing: .095px;
     }
     .header a {
@@ -126,9 +126,9 @@ a {
     .logo {
         height: 100%;
         width: auto;
-        padding: .4vw;
+        padding: 3px;
     }
     body {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 }

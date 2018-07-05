@@ -1,4 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import "../../../../styles/index.scss";
+* {
+    text-transform: capitalize;
+    font-family: 'Abel', sans-serif;
+}
 .inner {
     overflow: hidden;
     background-color: #313b47;
@@ -25,7 +30,7 @@
 @media screen and (max-width:860px) {
     .inner a {
     height:100%;
-    line-height: 50px;
+    line-height: 70px;
     font-size:13px;
     }
 }
@@ -46,6 +51,11 @@ a.logo {
     button.navbar-toggler {
         float:right;
         display:block;
+        background: none;
+        border: none;
+    }
+    button.navbar-toggler:hover {
+        cursor: pointer;
     }
     .inverted-navbar.inverted-navbar.isNavbarCollapsed {
         display: block;
@@ -65,19 +75,20 @@ a.logo {
         right:0;
         top:0;
         height:100%;
-        padding:0 1.6vw;
+width: 60px;
         margin: 0;
-        font-size: 20px;
+        font-size: 8vw;
         color: #a68080;
+        cursor: pointer;
     }
     .inverted-navbar.isNavbarCollapsed a {
         float: right;
         display: block;
         text-align: center;
-        height: 50px;
-        line-height: 50px;
+        height: 60px;
+        line-height: 60px;
         width: 100%;
-        font-size:12px;
+        font-size:18px;
         background: #a68080;
         color:#313b47;
 
