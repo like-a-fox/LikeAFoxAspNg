@@ -1,14 +1,5 @@
 @import 'Color';
 
-header {
-    .inner {
-        a {
-            &.active {
-                font-weight: bold;
-            }
-        }
-    }
-}
 .culture-form {
     display: inline;
     &.active > input[type="submit"]{

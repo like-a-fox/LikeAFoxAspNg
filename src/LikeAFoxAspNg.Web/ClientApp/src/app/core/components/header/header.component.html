@@ -1,10 +1,13 @@
 <appc-simple-notifications [options]="notificationOptions"></appc-simple-notifications>
 
 <header class="header">
-        <a class="logo" routerLink="">
-                <img class="logo" src="/assets/favicon-192x192.png" alt="logo">
-            </a>
-            <button type="button" class="navbar-toggler" (click)="navCollapse()"> &#9776; </button>
+        <div class="logo" routerLink="">
+        </div>
+            <button type="button" class="navbar-toggler" (click)="navCollapse()" [class.isNavbarCollapsed]="isNavbarCollapsed"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
     <div class="inner">
                    
                     <a routerLinkActive="active" routerLink="signalr">{{'app_nav_signalr' | translate}}</a>
@@ -21,12 +24,12 @@
 </header>
 <div class="inverted-navbar" [class.isNavbarCollapsed]="isNavbarCollapsed">
                    
-        <a routerLinkActive="active" routerLink="signalr">{{'app_nav_signalr' | translate}}</a>
-        <a routerLinkActive="active" routerLink="profile" *ngIf="isLoggedIn">{{user?.name}}</a>
-        <a (click)="logout()" href="javascript:void(null);" *ngIf="isLoggedIn"> {{'app_nav_logout' | translate}} </a>
-        <a routerLinkActive="active" routerLink="register" *ngIf="!isLoggedIn">{{'app_nav_register' | translate}}</a>
-        <a routerLinkActive="active" routerLink="login" *ngIf="!isLoggedIn">{{'app_nav_login' | translate}}</a>
-        <a href="https://github.com/like-a-fox/LikeAFoxAspNg" target="_blank" rel="noopener">
+        <a routerLinkActive="active" routerLink="signalr" (click)="navCollapse()">{{'app_nav_signalr' | translate}}</a>
+        <a routerLinkActive="active" routerLink="profile" *ngIf="isLoggedIn" (click)="navCollapse()">{{user?.name}}</a>
+        <a (click)="logout()" href="javascript:void(null);" *ngIf="isLoggedIn" (click)="navCollapse()"> {{'app_nav_logout' | translate}} </a>
+        <a routerLinkActive="active" routerLink="register" *ngIf="!isLoggedIn" (click)="navCollapse()">{{'app_nav_register' | translate}}</a>
+        <a routerLinkActive="active" routerLink="login" *ngIf="!isLoggedIn" (click)="navCollapse()">{{'app_nav_login' | translate}}</a>
+        <a href="https://github.com/like-a-fox/LikeAFoxAspNg" target="_blank" rel="noopener" (click)="navCollapse()">
             Github
         </a>
         
