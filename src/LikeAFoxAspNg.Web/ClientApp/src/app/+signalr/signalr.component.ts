@@ -9,6 +9,11 @@ import { routerTransition } from '../router.animations';
   styleUrls: ['./signalr.component.scss']
 })
 export class SignalrComponent {
+  public isSubCollapsed:boolean =true;
+
+  public subCollapse() {
+      this.isSubCollapsed = !this.isSubCollapsed
+  }
   menus = [
     { route: 'chat', text: 'Chat' },
     { route: 'moveshape', text: 'Move shape' }

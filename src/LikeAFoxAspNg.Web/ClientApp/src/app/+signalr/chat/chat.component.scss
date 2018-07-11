@@ -1,19 +1,22 @@
 .left-signalr {
-    height: 100%;
-    top:0;
-    left:0;
     position: fixed;
-    z-index: 1;
-    padding-top:6vw;
-    padding-left: 1vw;
-    width:40vw;  
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width:550px;  
     background: #c0c8d1; 
 }
+@media (max-width: 550px) {
+    .left-signalr {
+        width: 100%;
+    }
+}
 .chat-service {
-    position: fixed;
-    bottom:1.5vw;
-    left: 1vw;
-    width:38vw;
+position: absolute;
+    width:90%;
+    height: 40px;
+    bottom: 20px;
+    left: 5%;
 }
 
 
@@ -27,7 +30,7 @@
     margin:0;
     float:left;
     width:87%;
-    height:3vw;
+    height:40px;
     border:none;
     background:rgba(255, 255, 255, .5);
     color:#313b47 ;
@@ -39,16 +42,16 @@
 }
 .send-chat {
     margin:0;
-align-items: unset;
-display:block;
-float:right;
-width:13%;
-height:3vw;
-border: none;
-padding: 0;
-background: #313b47;
-color: #606c76;
-opacity: 1;
+    align-items: unset;
+    display:block;
+    float:right;
+    width:13%;
+    height:40px;
+    border: none;
+    padding: 0;
+    background: #313b47;
+    color: #a68080;
+    opacity: 1;
 }
 .send-chat:hover {
     background: #606c76;
@@ -56,12 +59,13 @@ opacity: 1;
     cursor: pointer;
 }
 .chat-display {
-    position: fixed;
-    bottom:4.5vw;
-    left: 1vw;
-    width:38vw;
+    position: absolute;
+    bottom: 60px;
+    left:5%;
+    width:90%;
+    height: 40px;
     background: rgba(255, 255, 255, .8);
-    padding-top:3vw;
+    padding-top:10px;
 }
 .sad-chat {
     text-align: center;
@@ -70,29 +74,30 @@ opacity: 1;
     position: absolute;
     top:0;
     width:100%;
+    line-height: 40px;
 }
 .message-header {
     position: absolute;
     top: 0;
     width: 100%;
-    height:3vw;
+    height:40px;
     background: #313b47 ;
     color: #a68080;
 }
 .message-tag {
-    height: 3vw;
+    height: 40px;
     width: 10%;
-    line-height: 3vw;
+    line-height: 40px;
     text-align: left;
-    padding-left: 2vw;
+    padding-left: 10px;
     float:left;
 }
 .message-title {
-    height: 3vw;
-    width: 90%;
-    line-height: 3vw;
+    height: 40px;
+    width: 45%;
+    line-height: 40px;
     text-align: left;
-    padding-left: 2vw;
+    padding-left: 10px;
     float:right;
 }
 .popular-mesages {
@@ -101,8 +106,16 @@ opacity: 1;
     bottom:0;
 }
 .block-header {
+    margin: 0;
+    color: #313b47;
     display: block;
-    width: 25vw;
-    border-bottom: solid .3vw #313b47;
+    width: 90%;
+    text-align: left;
+    position: relative;
+    top: 22px;
+    left: 5%;
+    font-size: 20px;
+    font-weight: unset;
+    border-bottom: solid #313b47 3px;
 }
 

@@ -53,13 +53,14 @@
 }
 
 div.logo {
-    padding: 10px;
-    width: 100px;
+    width: 60px;
     height: 60px;
-    float: left;
+    position: fixed;
+    left: 0;
+    top: 0;
     background-image: url('../../../../assets/favicon-192x192.png');
     background-repeat:no-repeat;
-    background-size: auto 70%;  
+    background-size: auto 40px;  
     background-position: center;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -82,6 +83,7 @@ div.logo:focus {
     border: none;
     outline:none;
 }
+
 .navbar-toggler, .inverted-navbar {
     display: none;
 }

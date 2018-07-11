@@ -1,22 +1,45 @@
+@import "../../styles/index.scss";
 
-.right-signalr h1 {
-    margin: unset;
-}
-.right-signalr {
+.signalr-nav {
     position: fixed;
-    height: 30%;
-    padding-top:6vw;
-    top:0;
-    right:0;
-    width:26vw;
-    margin-bottom: 0;
+    top: 0;
+    left: 60px;
+    z-index: 999;
+    height: 60px;
 }
 .signalr-title {
     display: block;
-    width:25vw;
-    margin-right:1vw;
-    text-align: right;
-    color: #313b47;
-    border-bottom: solid .3vw #606c76;
+    float: right;
+    font-size: 18px;
+    text-transform: capitalize;
+    width: 490px;
+    padding-right: 60px;
+    line-height: 60px;
+    color: $color-font;
+    background: $color-primary;
+    text-align: center;
+    height: 100%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
 
+.signalr-title:hover {
+    color: $color-primary;
+    background: $color-font;
+}
+.isSubCollapsed {
+    display: none;
+}
+@media (max-width:680px) {
+    .signalr-title {
+        width: 170px;
+        padding: 0;
+    }
 }

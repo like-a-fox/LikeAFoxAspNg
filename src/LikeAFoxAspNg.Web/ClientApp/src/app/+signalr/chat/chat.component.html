@@ -20,14 +20,15 @@
       <div *ngIf="messages.length <= 0">
           <span class="sad-chat">~ No messages ~</span>
         </div>
+        
     </div>
-    
     <div class="chat-service">
         <form class="form-inline message-form" (ngSubmit)="sendMessage()" #messageForm="ngForm">
             <input type="text" class="form-control message-textarea" id="message" placeholder="your message..." name="message" [(ngModel)]="message" required>
             <button type="submit" class="btn btn-primary send-chat" [disabled]="!messageForm.valid">Send</button>
           </form>
     </div>
+    
     
     
 </div>
