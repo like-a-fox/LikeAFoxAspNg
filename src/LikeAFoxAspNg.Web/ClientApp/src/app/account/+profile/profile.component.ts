@@ -1,12 +1,11 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { ProfileService } from './profile.service';
 
 @Component({
     selector: 'appc-profile',
     templateUrl: './profile.component.html',
-    styleUrls: ['./profile.component.scss'],
-    encapsulation: ViewEncapsulation.Native
+    styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
     menus = [

@@ -1,8 +1,0 @@
-@import 'Color';
-
-.culture-form {
-    display: inline;
-    &.active > input[type="submit"]{
-        text-decoration: underline;
-    }
-}

@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@import 'Colors';
+
+@include mat-core();
+
+$mat-primary: mat-palette($mat-primary, 500, 100, 700);
+$mat-accent: mat-palette($mat-accent, A200, A100, A400);
+
+$mat-warn: mat-palette($mat-warn);
+
+$fox-app-theme: mat-light-theme($mat-primary, $mat-accent, $mat-warn);
+
+@include angular-material-theme($fox-app-theme);
+
